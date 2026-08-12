@@ -1,0 +1,137 @@
+.weather-info {
+  text-align: center;
+
+  padding-top: 5px;
+
+  animation: fadeIn 0.4s ease;
+}
+
+/* Weather icon */
+.weather-icon {
+  font-size: 70px;
+
+  margin-bottom: 5px;
+}
+
+/* City name */
+.city {
+  margin: 0;
+
+  text-transform: capitalize;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: #1e293b;
+}
+
+/* Temperature */
+.temperature {
+  margin: 8px 0 25px;
+
+  font-size: 56px;
+
+  font-weight: 700;
+
+  color: #2563eb;
+}
+
+/* Information grid */
+.weather-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+/* Individual information card */
+.info-card {
+  padding: 18px 10px;
+
+  border-radius: 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  transition: 0.2s ease;
+}
+
+/* Card hover */
+.info-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Label */
+.info-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 13px;
+
+  color: #64748b;
+
+  font-weight: 500;
+}
+
+/* Value */
+.info-card h4 {
+  margin: 0;
+
+  font-size: 17px;
+
+  color: #1e293b;
+}
+
+/* Empty message */
+
+.weather-info h3 {
+  margin: 20px 0 0;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .weather-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .temperature {
+    font-size: 48px;
+  }
+
+  .weather-icon {
+    font-size: 60px;
+  }
+}
