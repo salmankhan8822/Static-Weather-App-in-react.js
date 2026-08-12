@@ -7,6 +7,7 @@ This project was created to practice **React fundamentals and JavaScript logic**
 ---
 
 ## 🚀 Live Demo
+https://weather-app-react-phi-three.vercel.app/
 
 ---
 
